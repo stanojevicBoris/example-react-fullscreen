@@ -4,7 +4,8 @@ export default function useFullscreenStatus(elRef) {
   const [isFullscreen, setIsFullscreen] = React.useState(
     document[getBrowserFullscreenElementProp()] != null
   );
-
+  
+  //What is the meaning of this function since it's nowhere called ?
   const setFullscreen = () => {
     if (elRef.current == null) return;
 
